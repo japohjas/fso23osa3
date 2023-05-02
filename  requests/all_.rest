@@ -1,0 +1,47 @@
+ 
+GET http://localhost:3001/api/persons
+
+###
+GET  http://localhost:3001/api/info
+
+###
+GET  http://localhost:3001/api/persons/4
+
+###
+DELETE http://localhost:3001/api/persons/4
+
+###
+POST http://localhost:3001/api/persons 
+Content-Type: application/json
+
+{
+    "name": "Helmi Irmeli",
+    "number": "123-123456"
+}
+
+###
+POST http://localhost:3001/api/persons 
+Content-Type: application/json
+
+{
+    "name": "",
+    "number": "123-123456"
+}
+
+###
+POST http://localhost:3001/api/persons 
+Content-Type: application/json
+
+{
+    "name": "Helmi Irmeli",
+    "number": ""
+}
+
+### 
+POST http://localhost:3001/api/persons 
+Content-Type: application/json
+
+{
+    "name": "Liisa Marttinen",
+    "number": "040-243563"
+}
